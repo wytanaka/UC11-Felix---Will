@@ -7,8 +7,8 @@
  */
 function oddFilter(a) {
     var result = [];
-    for (i = 0; i < a.length - 1; ++i) {
-        if (a[i] % 2 != 0) {
+    for (i = 0; i < a.length; i++) {
+        if (a[i] % 2 == 1) {
             result.push(a[i]);
         }
     }
@@ -23,9 +23,9 @@ function oddFilter(a) {
 function listTriangularNumbers(n) {
     var num;
     var array = [];
-    for (i = 1; i <= n; ++i) {
+    for (i = 0; i < n; ++i) {
         num = i;
-        for (j = i; j >= 1; --j) {
+        for (j = i; j >= 1; j--) {
             num = num + j;
         }
         array.push(num);
