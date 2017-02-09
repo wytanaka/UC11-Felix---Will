@@ -25,7 +25,7 @@ function listTriangularNumbers(n) {
     var array = [];
     for (i = 0; i < n; ++i) {
         num = i;
-        for (j = i; j >= 1; j--) {
+        for (j = i - 1; j >= 0; j--) {
             num = num + j;
         }
         array.push(num);
