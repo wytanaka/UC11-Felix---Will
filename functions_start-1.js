@@ -60,7 +60,7 @@ function multTable(row, col) {
  * @returns {number}
  */
 function factorial(n) {
-    var result = 0;
+    var result = 1;
     for (var i = n; i > 1; i--) {
         result = result * i;
     }
@@ -74,8 +74,8 @@ function factorial(n) {
  * @returns {number} nCk
  */
 function combinations(n, k) {
-    var c;
-    c = factorial(n) / factorial(k) * (factorial(n - k));
+
+  var  c = factorial(n) / (factorial(k) * factorial(n - k));
     return c;
 }
 
