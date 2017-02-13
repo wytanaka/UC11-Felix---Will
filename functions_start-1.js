@@ -69,8 +69,7 @@ function factorial(n) {
  * @returns {number} nCk
  */
 function combinations(n, k) {
-
-  var  c = factorial(n) / (factorial(k) * factorial(n - k));
+    var c = factorial(n) / (factorial(k) * factorial(n - k));
     return c;
 }
 /**
@@ -85,10 +84,9 @@ function sort(a) {
         var k;
         for (k = i - 1;
             (k >= 0) && (j < result[k]); k--) {
-            result[k - 1] = result[k];
+            result[k + 1] = result[k];
         }
-        result[k - 1] = j;
+        result[k + 1] = j;
     }
     return result;
 }
-
