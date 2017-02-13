@@ -16,7 +16,7 @@ QUnit.test("Test the oddFilter function.", function (assert) {
 QUnit.test("Test the listTriangularNumbers function.", function (assert) {
     var n = 5;
     var result = listTriangularNumbers(n);
-    assert.deepEqual(result, [1,3,6,10,15], "We expect result to be 1, 3, 6, 10, 15");
+    assert.deepEqual(result, [0,1,3,6,10], "We expect result to be 0, 1, 3, 6, 10");
 });
 //USER STORY 3
 QUnit.test("Test the multTable function.", function (assert){
